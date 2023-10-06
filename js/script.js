@@ -92,3 +92,14 @@ popupCallbackClose.addEventListener('click', () => {
   popupCallback.classList.remove('active');
   document.body.classList.remove('lock');
 })
+
+//popup_confirm------------------------
+const popupConfirm = document.getElementById('popup_confirm');
+const confirmCloseBtns = document.querySelectorAll('.popup_confirm_close_btn')
+
+confirmCloseBtns.forEach(item => {
+  item.addEventListener('click', () => {
+    popupConfirm.classList.remove('active');
+    document.body.classList.remove('lock');
+  })
+})
