@@ -77,3 +77,18 @@ const swiper_main = new Swiper('.slider_main', {
   //   }
   // }
 });
+
+//popup_callback--------------------
+const headerIndiCallbackLink = document.getElementById('header_indi_callback_link')
+const popupCallback = document.getElementById('popup_callback');
+const popupCallbackClose = document.getElementById('popup_callback_close');
+
+headerIndiCallbackLink.addEventListener('click', () => {
+  popupCallback.classList.add('active');
+  document.body.classList.add('lock');
+})
+
+popupCallbackClose.addEventListener('click', () => {
+  popupCallback.classList.remove('active');
+  document.body.classList.remove('lock');
+})
