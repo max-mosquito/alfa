@@ -1436,6 +1436,7 @@ h4 {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0 20px;
+  display: none;
 }
 .popup_confirm.active {
   display: -webkit-box;
