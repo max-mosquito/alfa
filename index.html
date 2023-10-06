@@ -26,6 +26,40 @@
             </div>
          </div>
          <div class="header_top">
+            <!-- ----start dropdown_header----  -->
+            <div class="dropdown_header" id="dropdown_header">
+               <div class="dropdown_header_wrap wrap">
+                  <div class="dropdown_header_list">
+                     <div class="dropdown_header_search">
+                        <input type="text" placeholder="Какую технику вы ищите?">
+                     </div>
+                     <ul class="dropdown_header_list_tech">
+                        <li class="dropdown_header_lis_item">Весь каталог</li>
+                        <li class="dropdown_header_lis_item">Экскаваторы</li>
+                        <li class="dropdown_header_lis_item">Экскаваторы-погрузчики</li>
+                        <li class="dropdown_header_lis_item">Фронтальные погрузчики</li>
+                        <li class="dropdown_header_lis_item">Автогрейдеры</li>
+                        <li class="dropdown_header_lis_item">Бульдозеры</li>
+                        <li class="dropdown_header_lis_item">Дорожные катки</li>
+                        <li class="dropdown_header_lis_item">Погрузчики с бортовым поворотом</li>
+                        <li class="dropdown_header_lis_item">Вилочные погрузчики</li>
+                        <li class="dropdown_header_lis_item">Асфальтоукладчики</li>
+                        <li class="dropdown_header_lis_item">Карьерные самосвалы</li>
+                        <li class="dropdown_header_lis_item">Автокраны</li>
+                        <li class="dropdown_header_lis_item">Дорожные фрезы</li>
+                        <li class="dropdown_header_lis_item">Буровые установки</li>
+                        <li class="dropdown_header_lis_item">Мобильные рабочие платформы</li>
+                        <li class="dropdown_header_lis_item">Подъёмники ножного типа</li>
+                        <li class="dropdown_header_lis_item">Установки для буровзрывных работ</li>
+                        <li class="dropdown_header_lis_item">Складская техника</li>
+                     </ul>
+                  </div>
+                  <div class="dropdown_header_pic">
+                     <img src="img/bann.png" alt=" ">
+                  </div>
+               </div>
+            </div>
+            <!-- ----end dropdown_header----  -->
             <div class="header_top_wrap wrap">
                <div class="header_top_logo">
                   <img class="header_top_logo1" src="img/logo_header_as.svg" alt=" ">
@@ -34,10 +68,14 @@
                </div>
                <nav class="header_top_menu" id="header_top_menu">
                   <ul>
-                     <li>Каталог техники</li>
+                     <li id="catalog"><a href="#">Каталог техники <span>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="#27203E" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.94467L1.41 0L0 1.52227L6 8L12 1.52227L10.59 0Z" />
+                        </svg>
+                     </span></a></li>
                      <li><a href="#">Сервис</a></li>
                      <li><a href="#">Запчасти</a></li>
-                     <li>Об АльфаСервис</li>
+                     <li><a href="#">Об АльфаСервис</a></li>
                      <li><a href="#">Контакты</a></li>
                   </ul>
                </nav>
@@ -46,6 +84,7 @@
          </div>
    </header>
    <!-- ----end header---- -->
+
    <!-- ----start slider_main---- -->
    <section class="slider_main">
       <div class="swiper-wrapper">
@@ -267,7 +306,7 @@
    </section>
    <!-- ----end comments---- -->
    <!-- ----start partners---- -->
-   <sectiuons class="partners">
+   <section class="partners">
       <div class="partners_wrap">
          <div class="partners_title">
             <h2>Наши партнёры</h2>
@@ -370,7 +409,7 @@
          <div class="partners_swiper_pagination"></div>
          <div class="partners_swiper_button_next"></div>
       </div>
-   </sectiuons>
+   </section>
    <!-- ----end partners---- -->
    <!-- ----start sendme---- -->
    <section class="sendme">

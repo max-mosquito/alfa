@@ -103,3 +103,12 @@ confirmCloseBtns.forEach(item => {
     document.body.classList.remove('lock');
   })
 })
+
+//catalog-----------------------------
+const catalogBtn = document.getElementById('catalog');
+const dropdownCatalog = document.getElementById('dropdown_header');
+
+catalogBtn.addEventListener('click', () => {
+  dropdownCatalog.classList.toggle('active');
+  document.body.classList.toggle('lock');
+})
