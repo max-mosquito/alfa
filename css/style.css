@@ -208,6 +208,35 @@ h4 {
 }
 .dropdown_header_search {
   margin-bottom: 16px;
+  border: 1px solid #ACAFBF;
+  border-radius: 12px;
+  max-width: 360px;
+  width: 100%;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.dropdown_header_search:after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 18px;
+  background: url("../img/search_icon.svg");
+}
+.dropdown_header_search input {
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .dropdown_header_list_tech {
@@ -267,6 +296,13 @@ h4 {
     height: 241px;
   }
 }
+.dropdown_header_pic_item {
+  display: none;
+}
+.dropdown_header_pic_item.active {
+  display: block;
+}
+
 .header_top_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +403,16 @@ h4 {
   color: #6C6F80;
   padding: 12px 16px;
   display: block;
+}
+.header_top_menu ul li.active a {
+  background-color: #27203E;
+  color: #fff;
+  border: none;
+}
+.header_top_menu ul li.active a span svg {
+  fill: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 @media (max-width: 1200px) {
@@ -1616,4 +1662,106 @@ h4 {
 .confirm_btn {
   width: 100%;
   height: 42px;
+}
+
+.breadcrumbs {
+  margin-bottom: 64px;
+}
+
+.breadcrumbs_content {
+  background-color: #F5F6FA;
+  padding: 8px 16px;
+}
+.breadcrumbs_content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.breadcrumbs_content ul li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-right: 24px;
+  position: relative;
+}
+.breadcrumbs_content ul li:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  width: 4px;
+  height: 6px;
+  background: url("../img/chevron_right.svg");
+}
+.breadcrumbs_content ul li:last-child:after {
+  content: none;
+}
+.breadcrumbs_content ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ACAFBF;
+}
+
+.catalog {
+  margin-bottom: 63px;
+}
+
+.catalog_title {
+  margin-bottom: 64px;
+}
+
+.catalog_row_s {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.catalog_row_s a {
+  border: 1px solid #ACAFBF;
+}
+
+.catalog_row_s_card {
+  padding: 16px;
+}
+
+.catalog_row_s_card_pic {
+  margin-bottom: 22px;
+}
+
+.catalog_row_s_card_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #6C6F80;
+}
+
+.catalog_row_half {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 8px auto;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px;
+}
+.catalog_row_half a {
+  border: 1px solid #ACAFBF;
+}
+
+.catalog_row_half_card {
+  padding: 16px;
+}
+
+.catalog_row_half_card_pic {
+  margin-bottom: 22px;
+}
+
+.catalog_row_half_card_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #6C6F80;
 }
