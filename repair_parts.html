@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Запчасти</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- ----start header---- -->
+   <header class="header">
+      <div class="header_indi">
+         <div class="header_indi_wrap wrap">
+            <div class="header_indi_text">
+               <p>Принимаем заказы по индивидуальным комплектациям</p>
+            </div>
+            <div class="header_indi_callback">
+               <div class="header_indi_callback_phone">
+                  <a href="tel:88005339590">8 800 533-95-90</a>
+               </div>
+               <div class="header_indi_callback_link" id="header_indi_callback_link">
+                  <a href="#">Заказать звонок</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="header_top">
+         <!-- ----start dropdown_header----  -->
+         <div class="dropdown_header" id="dropdown_header">
+            <div class="dropdown_header_wrap wrap">
+               <div class="dropdown_header_list">
+                  <div class="dropdown_header_search">
+                     <input type="text" placeholder="Какую технику вы ищите?">
+                  </div>
+                  <ul class="dropdown_header_list_tech">
+                     <li class="dropdown_header_lis_item">Весь каталог</li>
+                     <li class="dropdown_header_lis_item">Экскаваторы</li>
+                     <li class="dropdown_header_lis_item">Экскаваторы-погрузчики</li>
+                     <li class="dropdown_header_lis_item">Фронтальные погрузчики</li>
+                     <li class="dropdown_header_lis_item">Автогрейдеры</li>
+                     <li class="dropdown_header_lis_item">Бульдозеры</li>
+                     <li class="dropdown_header_lis_item">Дорожные катки</li>
+                     <li class="dropdown_header_lis_item">Погрузчики с бортовым поворотом</li>
+                     <li class="dropdown_header_lis_item">Вилочные погрузчики</li>
+                     <li class="dropdown_header_lis_item">Асфальтоукладчики</li>
+                     <li class="dropdown_header_lis_item">Карьерные самосвалы</li>
+                     <li class="dropdown_header_lis_item">Автокраны</li>
+                     <li class="dropdown_header_lis_item">Дорожные фрезы</li>
+                     <li class="dropdown_header_lis_item">Буровые установки</li>
+                     <li class="dropdown_header_lis_item">Мобильные рабочие платформы</li>
+                     <li class="dropdown_header_lis_item">Подъёмники ножного типа</li>
+                     <li class="dropdown_header_lis_item">Установки для буровзрывных работ</li>
+                     <li class="dropdown_header_lis_item">Складская техника</li>
+                  </ul>
+               </div>
+               <div class="dropdown_header_pic">
+                  <img loading="lazy" class="dropdown_header_pic_item" src="img/с1.webp" alt=" ">
+                  <img loading="lazy" class="dropdown_header_pic_item" src="img/с2.webp" alt=" ">
+                  <img loading="lazy" class="dropdown_header_pic_item" src="img/с3.webp" alt=" ">
+               </div>
+            </div>
+         </div>
+         <!-- ----end dropdown_header----  -->
+         <div class="header_top_wrap wrap">
+            <div class="header_top_logo">
+               <img loading="lazy" class="header_top_logo1" src="img/logo_header_as.svg" alt=" ">
+               <span></span>
+               <img loading="lazy" class="header_top_logo2" src="img/logo-LG.svg" alt=" ">
+            </div>
+            <nav class="header_top_menu" id="header_top_menu">
+               <ul>
+                  <li id="catalog"><a href="/catalog_all_category.html">Каталог техники <span>
+                     <svg width="12" height="8" viewBox="0 0 12 8" fill="#27203E" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.94467L1.41 0L0 1.52227L6 8L12 1.52227L10.59 0Z" />
+                     </svg>
+                  </span></a></li>
+                  <li><a href="#">Сервис</a></li>
+                  <li><a href="#">Запчасти</a></li>
+                  <li><a href="#">Об АльфаСервис</a></li>
+                  <li><a href="#">Контакты</a></li>
+               </ul>
+            </nav>
+            <div class="burger" id="burger"></div>
+         </div>
+      </div>
+   </header>
+   <!-- ----end header---- -->
+   <!-- ----start breadcrumbs---- -->
+   <section class="breadcrumbs">
+      <div class="breadcrumbs_wrap wrap">
+         <div class="breadcrumbs_content">
+            <ul>
+               <li><a href="/">Главная</a></li>
+               <li>Запчасти</li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   <!-- ----end breadcrumbs---- -->
+   <!-- -----start repairParts------ -->
+   <section class="repairParts">
+      <div class="repairParts_wrap wrap">
+         <div class="repairParts_title">
+            <h2>Запчасти</h2>
+         </div>
+         <div class="repairParts_info">
+            <div class="repairParts_info_pic">
+               <img src="img/repairParts.png" alt=" ">
+            </div>
+            <div class="repairParts_info_descr">
+               <div class="repairParts_info_descr_card">
+                  <p>Оригинальные запчасти с гарантией до 1 года</p>
+               </div>
+               <div class="repairParts_info_descr_card">
+                  <p>Собственные склады в г. Казань, Н. Челны, Уфа</p>
+               </div>
+               <div class="repairParts_info_descr_card">
+                  <p>Более 5 000 позиций в наличии </p>
+               </div>
+               <div class="repairParts_info_descr_card">
+                  <p>Точный подбор по VIN* техники</p>
+               </div>
+               <div class="repairParts_info_descr_card">
+                  <p class="footnote">*Уникальный код транспортного средства</p>
+               </div>
+            </div>
+         </div>
+         <!-- ----start search---- -->
+         <section class="search">
+            <div class="search_wrap wrap">
+               <div class="input_wrap">
+                  <input  type="text" name="search" placeholder="Какую технику вы ищите?">
+               </div>
+               <button class="btn btn_search">Найти</button>
+            </div>
+         </section>
+         <!-- ----end search---- -->
+         <div class="repairParts_tabs">
+            <div class="repairParts_tabs_headers">
+               <ul>
+                  <li class="repairParts_tabs_headers_item active">Запчасти</li>
+                  <li class="repairParts_tabs_headers_item">Навесное оборудование</li>
+               </ul>
+            </div>
+            <div class="repairParts_tabs_content">
+               <div class="repairParts_tabs_content_item active">
+                  <div class="repairParts_tabs_content_select">
+                     <div class="repairParts_tabs_content_select_label">
+                        <p>Тип техники</p>
+                     </div>
+                     <select name="repairParts_type" id="repairParts_type">
+                        <option value="Автогрейдеры">Автогрейдеры</option>
+                        <option value="Бульдозеры">Бульдозеры</option>
+                        <option value="Вилочные погрузчики">Вилочные погрузчики</option>
+                        <option value="Катки дорожные">Катки дорожные</option>
+                        <option value="Мини-погрузчики">Мини-погрузчики</option>
+                        <option value="Фронтальные погрузчики">Фронтальные погрузчики</option>
+                        <option value="Экскаваторы">Экскаваторы</option>
+                        <option value="Экскаваторы-погрузчики">Экскаваторы-погрузчики</option>
+                     </select>
+                  </div>
+                  <div class="repairParts_tabs_content_select">
+                     <div class="repairParts_tabs_content_select_label">
+                        <p>Марка</p>
+                     </div>
+                     <select name="repairParts_brand" id="repairParts_brand">
+                        <option value="CAT">CAT</option>
+                        <option value="JC">JC</option>
+                        <option value="LiuGong">LiuGong</option>
+                        
+                     </select>
+                  </div>
+                  <div class="repairParts_tabs_content_select">
+                     <div class="repairParts_tabs_content_select_label">
+                        <p>Вид запчасти</p>
+                     </div>
+                     <select name="repairParts_repairPart" id="repairParts_repairPart">
+                        <option value="Двигатель">Двигатель</option>
+                        <option value="КПП">КПП</option>
+                        <option value="Рулевое управление">Рулевое управление</option>
+                        <option value="Тормозная система">Тормозная система</option>
+                     </select>
+                  </div>
+                  <div class="repairParts_tabs_content_btns">
+                     <button class="btn repairParts_tabsbtn_show">Показать</button>
+                     <button class="btn repairParts_tabsbtn_reset">Сбросить</button>
+                  </div>
+               </div>
+               <div class="repairParts_tabs_content_item">
+                  <div class="repairParts_tabs_content_select">
+                     <div class="repairParts_tabs_content_select_label">
+                        <p>2Тип техники</p>
+                     </div>
+                     <select name="attachments_type" id="attachments_type">
+                        <option value="2Автогрейдеры">2Автогрейдеры</option>
+                        <option value="2Бульдозеры">2Бульдозеры</option>
+                        <option value="2Вилочные погрузчики">2Вилочные погрузчики</option>
+                        <option value="2Катки дорожные">К2атки дорожные</option>
+                        <option value="2Мини-погрузчики">2Мини-погрузчики</option>
+                        <option value="2Фронтальные погрузчики">2Фронтальные погрузчики</option>
+                        <option value="2Экскаваторы">2Экскаваторы</option>
+                        <option value="2Экскаваторы-погрузчики">2Экскаваторы-погрузчики</option>
+                     </select>
+                  </div>
+                  <div class="repairParts_tabs_content_select">
+                     <div class="repairParts_tabs_content_select_label">
+                        <p>Марка</p>
+                     </div>
+                     <select name="attachments_brand" id="attachments_brand">
+                        <option value="CAT">CAT</option>
+                        <option value="JC">JC</option>
+                        <option value="LiuGong">LiuGong</option>
+                        
+                     </select>
+                  </div>
+                  <div class="repairParts_tabs_content_select">
+                     <div class="repairParts_tabs_content_select_label">
+                        <p>Вид запчасти</p>
+                     </div>
+                     <select name="attachments_repairPart" id="attachments_repairPart">
+                        <option value="Двигатель">Двигатель</option>
+                        <option value="КПП">КПП</option>
+                        <option value="Рулевое управление">Рулевое управление</option>
+                        <option value="Тормозная система">Тормозная система</option>
+                     </select>
+                  </div>
+                  <div class="repairParts_tabs_content_btns">
+                     <button class="btn repairParts_tabsbtn_show">Показать</button>
+                     <button class="btn repairParts_tabsbtn_reset">Сбросить</button>
+                  </div>
+               </div>
+            </div>
+            <div class="repairParts_filter_result">
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_yellow"></span><p>Под заказ</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+               <div class="repairParts_filter_result_card">
+                  <div class="repairParts_filter_result_card_pic">
+                     <img src="img/repairParts_card.png" alt=" ">
+                  </div>
+                  <div class="repairParts_filter_result_card_title">
+                     <p>Lable</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_articul">
+                     <p>Артикул</p>
+                     <p>12467843</p>
+                  </div>
+                  <div class="repairParts_filter_result_card_bottom">
+                     <div class="repairParts_filter_result_card_bottom_status">
+                        <span class="status_green"></span><p>Status</p>
+                     </div>
+                     <div class="repairParts_filter_result_card_btn">
+                        <button class="btn repairParts_filter_result_btn">Узнать цену</button>
+                     </div>
+                     <div class="repairParts_filter_result_card_chart">
+                        <img src="img/chart.svg" alt=" ">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="repairParts_pagination">
+               <ul>
+                  <li><span class="page-numbers prev inactive"></span></li>
+                  <li><span class="page-numbers current">1</span></li>
+                  <li><a href="#" class="page-numbers">2</a></li>
+                  <li><a href="#" class="page-numbers">3</a></li>
+                  <li><a href="#" class="page-numbers">4</a></li>
+                  <li><a href="#" class="page-numbers">5</a></li>
+                  <li><a href="#" class="page-numbers next"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- ----end repairParts---- -->
+   <!-- ----start sendme---- -->
+   <section class="sendme">
+      <div class="sendme_wrap wrap">
+         <div class="sendme_content">
+            <div class="sendme_info">
+               <div class="sendme_info_title">
+                  <p>Напишите нам</p>
+               </div>
+               <div class="sendme_info_text">
+                  <p>Если у вас есть вопросы или вы не знаете, что выбрать, оставьте свой номер телефона: мы позвоним, чтобы ответить на все ваши вопросы.</p>
+               </div>
+            </div>
+            <div class="sendme_form">
+               <form class="main_form">
+                  <div class="main_form_name">
+                     <label for="name"> Имя</label>
+                     <input type="text" name="name" class="name" id="name" placeholder="Введите текст">
+                  </div>
+                  <div class="twohalf">
+                     <div class="main_form_phone">
+                        <label for="phone">Телефон </label>
+                        <input type="phone" name="phone" class="phone" id="phone" placeholder="Введите телефон">
+                     </div>
+                     <div class="main_form_email">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" name="email" class="email" id="email" placeholder="Введите почту">
+                     </div>
+                  </div>
+                  <div class="checkbox_btn">
+                     <div class="main_form_checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox" required>
+                        <label for="checkbox">Я согласен(а) на обработку персональных данных.</label>
+                     </div>
+                     <div class="main_form_btn">
+                        <button class="btn btn_submit_main">Отправить</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- ----end sendme---- -->
+   <!-- ----start footer---- -->
+   <footer class="footer">
+      <div class="footer_wrap wrap">
+         <div class="footer_links">
+            <div class="footer_links_col">
+               <div class="footer_links_col_title">
+                  <p>Каталог техники</p>
+               </div>
+               <div class="footer_links_col_content footer_links_col_content_twocol">
+                  <ul>
+                     <li><a href="#">Экскаваторы</a></li>
+                     <li><a href="#">Экскаваторы-погрузчики</a></li>
+                     <li><a href="#">Фронтальные погрузчики</a></li>
+                     <li><a href="#">Автогрейдеры</a></li>
+                     <li><a href="#">Бульдозеры</a></li>
+                     <li><a href="#">Дорожные катки</a></li>
+                     <li><a href="#">Погрузчики с бортовым поворотом</a></li>
+                     <li><a href="#">Вилочные погрузчики</a></li>
+                     <li><a href="#">Асфальтоукладчики</a></li>
+                  </ul>
+                  <ul>
+                     <li><a href="#">Карьерные самосвалы</a></li>
+                     <li><a href="#">Автокраны</a></li>
+                     <li><a href="#">Дорожные фрезы</a></li>
+                     <li><a href="#">Буровые установки</a></li>
+                     <li><a href="#">Мобильные рабочие платформы</a></li>
+                     <li><a href="#">Подъёмники ножного типа</a></li>
+                     <li><a href="#">Установки буровзрывных работ</a></li>
+                     <li><a href="#">Складская техника</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_links_col">
+               <div class="footer_links_col_title">
+                  <p>Сервис</p>
+               </div>
+               <div class="footer_links_col_content">
+                  <ul>
+                     <li><a href="#"></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_links_col">
+               <div class="footer_links_col_title">
+                  <p>Запчасти</p>
+               </div>
+               <div class="footer_links_col_content">
+                  <ul>
+                     <li><a href="#">Запчасти</a></li>
+                     <li><a href="#">Навесное оборудование</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer_links_col">
+               <div class="footer_links_col_title">
+                  <p>Об АльфаСервис</p>
+               </div>
+               <div class="footer_links_col_content">
+                  <ul>
+                     <li><a href="#">О компании</a></li>
+                     <li><a href="#">Новости и публикации</a></li>
+                     <li><a href="#">Отзывы</a></li>
+                     <li><a href="#">Контакты</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer_contacts">
+            <div class="footer_contacts_block">
+               <div class="footer_contacts_block_tel">
+                  <a href="tel:88005339552">8 800 533 95 52</a>
+               </div>
+               <div class="footer_contacts_block_email">
+                  <a href="mailto:info@alfa-lg.ru">info@alfa-lg.ru</a>
+               </div>
+            </div>
+            <div class="footer_contacts_block">
+               <div class="footer_contacts_block_soc">
+                  <a href="#"><img loading="lazy" src="img/vk.svg" alt=" "></a>
+                  <a href="#"><img loading="lazy" src="img/youtube.svg" alt=" "></a>
+               </div>
+            </div>
+         </div>
+         <div class="footer_feedback">
+            <div class="footer_feedback_info">
+               <div class="footer_form_info_title">
+                  <p>Будь в курсе</p>
+               </div>
+               <div class="footer_form_info_text">
+                  <p>Подпишитесь и узнавайте о новинках и спец. предложениях первыми</p>
+               </div>
+            </div>
+            <div class="footer_feedback_form">
+               <form class="footer_form">
+                  <div class="footer_form_content">
+                     <input type="email" name="email" class="footer_form_email" placeholder="Введите адрес электронной почты">
+                     <button class="btn footer_form_btn">Пописаться</button>
+                  </div>
+                  <input type="checkbox" name="footer_checkbox" id="footer_checkbox" class="footer_checkbox">
+                  <label for="footer_checkbox">Я согласен(а) на обработку <a href="#">персональных данных.</a></label>
+               </form>
+            </div>
+         </div>
+         <div class="footer_info">
+            <div class="footer_info_item footer_info_copy">
+               <p>© АльфаСервис, 2023 г.</p>
+            </div>
+            <div class="footer_info_item">
+               <a href="#">Договор оферты</a>
+            </div>
+            <div class="footer_info_item">
+               <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer_info_item">
+               <p>Мы используем файлы cookie, для персонализации сервисов и повышения удобства пользования сайтом. Если вы не согласны на их использование, поменяйте настройки браузера.</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- ----end footer---- -->
+   <script src="js/repair_parts.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

@@ -13,18 +13,10 @@ const dropdownCatalog = document.getElementById('dropdown_header');
 const listTechBtn = document.querySelectorAll('.dropdown_header_lis_item');
 const techPic= document.querySelectorAll('.dropdown_header_pic_item');
 
-catalogBtn.addEventListener('mouseover', (e) => {
-  // e.stopPropagation();
-  catalogBtn.classList.add('active');
-  dropdownCatalog.classList.add('active');
-  document.body.classList.add('lock');
-})
-
-catalogBtn.addEventListener('mouseout', (e) => {
-  // e.stopPropagation();
-  catalogBtn.classList.remove('active');
-  dropdownCatalog.classList.remove('active');
-  document.body.classList.remove('lock');
+catalogBtn.addEventListener('click', () => {
+  catalogBtn.classList.toggle('active');
+  dropdownCatalog.classList.toggle('active');
+  document.body.classList.toggle('lock');
 })
 
 function hidePic() {

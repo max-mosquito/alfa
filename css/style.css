@@ -552,6 +552,7 @@ h4 {
   border-radius: 12px;
   position: relative;
   padding-left: 40px;
+  padding-right: 40px;
   margin-right: 32px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -570,6 +571,7 @@ h4 {
 }
 .input_wrap input {
   height: 42px;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -672,10 +674,10 @@ h4 {
 }
 
 .footnote {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-  color: #ACAFBF;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 12px !important;
+  color: #ACAFBF !important;
 }
 
 .map {
@@ -1914,22 +1916,22 @@ h4 {
 .singleCategory .singleCategory_pagination ul li:last-child {
   margin: 0;
 }
-.singleCategory .page-numbers {
+.singleCategory .singleCategory_pagination .page-numbers {
   color: #303240;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
-.singleCategory .prev {
+.singleCategory .singleCategory_pagination .prev {
   width: 30px;
   height: 30px;
   background: url("../img/arr_left.svg") center no-repeat;
   display: block;
 }
-.singleCategory .inactive {
+.singleCategory .singleCategory_pagination .inactive {
   opacity: 0.4;
 }
-.singleCategory .current {
+.singleCategory .singleCategory_pagination .current {
   color: #007BBD;
   border: 1px solid #007BBD;
   border-radius: 50%;
@@ -1945,7 +1947,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
-.singleCategory .next {
+.singleCategory .singleCategory_pagination .next {
   width: 30px;
   height: 30px;
   background: url("../img/arr_right.svg") center no-repeat;
@@ -2451,4 +2453,319 @@ h4 {
 }
 .service .service_brends_row img:last-child {
   margin-right: 0;
+}
+
+.repairParts .repairParts_title {
+  margin-bottom: 64px;
+}
+.repairParts .repairParts_info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 32px auto;
+  grid-template-columns: repeat(2, auto);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.repairParts .repairParts_info_pic {
+  width: 432px;
+  height: 236px;
+}
+.repairParts .repairParts_info_pic img {
+  width: 100%;
+}
+.repairParts .repairParts_info_descr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 32px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.repairParts .repairParts_info_descr_card p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #1D1E26;
+}
+.repairParts .repairParts_tabs {
+  border-bottom: 1px solid #eee;
+}
+.repairParts .repairParts_tabs_headers {
+  margin-bottom: 32px;
+}
+.repairParts .repairParts_tabs_headers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repairParts .repairParts_tabs_headers_item {
+  padding: 17px 32px;
+  position: relative;
+  cursor: pointer;
+}
+.repairParts .repairParts_tabs_headers_item::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: #FF671F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.repairParts .repairParts_tabs_headers_item.active::after {
+  width: 100%;
+}
+.repairParts .repairParts_tabs_content {
+  position: relative;
+  border: 1px solid #ACAFBF;
+  border-radius: 12px;
+  margin-bottom: 64px;
+}
+.repairParts .repairParts_tabs_content_item {
+  padding: 21px 19px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  z-index: -1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 12px 1fr 12px 1fr 12px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.repairParts .repairParts_tabs_content_item.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .repairParts .repairParts_tabs_content_item {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.repairParts .repairParts_tabs_content_select select {
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+  padding-left: 12px;
+  background-color: #fff;
+  border: 1px solid #CED0DB;
+}
+.repairParts .repairParts_tabs_content_select_label {
+  margin-bottom: 6px;
+}
+.repairParts .repairParts_tabs_content_select_label p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #303240;
+}
+.repairParts .repairParts_tabs_content_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.repairParts .repairParts_tabsbtn_show {
+  width: 95px;
+  height: 48px;
+  margin-bottom: 22px;
+}
+.repairParts .repairParts_tabsbtn_reset {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1D1E26;
+  background-color: #fff;
+  width: 97px;
+  height: 48px;
+  border: 1px solid #27203E;
+  border-radius: 12px;
+}
+.repairParts .repairParts_filter_result {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media (max-width: 991px) {
+  .repairParts .repairParts_filter_result {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .repairParts .repairParts_filter_result {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.repairParts .repairParts_filter_result_card {
+  border: 1px solid #ACAFBF;
+  border-radius: 12px;
+  padding: 16px;
+}
+.repairParts .repairParts_filter_result_card_pic {
+  margin-bottom: 24px;
+}
+.repairParts .repairParts_filter_result_card_pic img {
+  width: 100%;
+}
+.repairParts .repairParts_filter_result_card_title {
+  margin-bottom: 32px;
+}
+.repairParts .repairParts_filter_result_card_title p {
+  color: #27203E;
+}
+.repairParts .repairParts_filter_result_card_articul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.repairParts .repairParts_filter_result_card_articul p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.repairParts .repairParts_filter_result_card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repairParts .repairParts_filter_result_card_bottom_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repairParts .repairParts_filter_result_card_bottom_status span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 9px;
+}
+.repairParts .repairParts_filter_result_card_bottom_status p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.repairParts .status_green {
+  background-color: #88CC00;
+}
+.repairParts .status_yellow {
+  background-color: #FFC000;
+}
+.repairParts .status_red {
+  background-color: #f00;
+}
+.repairParts .repairParts_filter_result_card_btn {
+  margin-left: auto;
+  margin-right: 13px;
+}
+.repairParts .repairParts_filter_result_btn {
+  width: 115px;
+  height: 42px;
+}
+.repairParts .repairParts_pagination {
+  margin-bottom: 64px;
+}
+.repairParts .repairParts_pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repairParts .repairParts_pagination ul li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  height: 30px;
+  margin-right: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repairParts .repairParts_pagination ul li:last-child {
+  margin: 0;
+}
+.repairParts .repairParts_pagination .page-numbers {
+  color: #303240;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.repairParts .repairParts_pagination .prev {
+  width: 30px;
+  height: 30px;
+  background: url("../img/arr_left.svg") center no-repeat;
+  display: block;
+}
+.repairParts .repairParts_pagination .inactive {
+  opacity: 0.4;
+}
+.repairParts .repairParts_pagination .current {
+  color: #007BBD;
+  border: 1px solid #007BBD;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repairParts .repairParts_pagination .next {
+  width: 30px;
+  height: 30px;
+  background: url("../img/arr_right.svg") center no-repeat;
+  display: block;
 }
