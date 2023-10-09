@@ -2,7 +2,10 @@
 const swiper_main = new Swiper('.slider_main', {
    loop: true,
    spaceBetween: 32,
-   autoplay: true,
+   autoplay: {
+    delay:5000,
+   },
+   speed: 2000,
    pagination: {
      el: '.swiper-pagination',
    },
