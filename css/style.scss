@@ -2400,5 +2400,28 @@ h4{
 			display: block;
 		}
 	}
+	.equipment_tabs_content_item{
+		display: block;
+	}
+	.equipment_row {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 8px;
+		width: 100%;
+	}
+	@media (max-width:767px) {
+		.equipment_row{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	.equipment_row_card {
+		border: 1px solid #ACAFBF;
+		border-radius: 12px;
+		padding: 16px;
+	}
+	.equipment_row_card_pic {
+	}
+	.equipment_row_card_text {
+	}
 }
 // -----end repairParts------

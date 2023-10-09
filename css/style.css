@@ -2769,3 +2769,25 @@ h4 {
   background: url("../img/arr_right.svg") center no-repeat;
   display: block;
 }
+.repairParts .equipment_tabs_content_item {
+  display: block;
+}
+.repairParts .equipment_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .repairParts .equipment_row {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.repairParts .equipment_row_card {
+  border: 1px solid #ACAFBF;
+  border-radius: 12px;
+  padding: 16px;
+}
