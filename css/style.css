@@ -2361,3 +2361,94 @@ h4 {
 .singleCategory_FilterPanel ul li.active:after {
   width: 100%;
 }
+
+.service .service_typeWork {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 32px auto;
+  grid-template-columns: repeat(2, auto);
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  margin-bottom: 112px;
+}
+.service .service_typeWork_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.service .service_typeWork_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.service .service_typeWork_content_card {
+  background-color: #F5F6FA;
+  border-radius: 12px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.service .service_typeWork_content_card_pic {
+  margin-bottom: 16px;
+  width: 48px;
+}
+.service .service_typeWork_content_card_pic img {
+  width: 100%;
+}
+.service .service_typeWork_content_card_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1D1E26;
+}
+.service .service_brends {
+  margin-bottom: 64px;
+}
+.service .service_brends_title {
+  margin-bottom: 32px;
+}
+.service .service_brends_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.service .service_brends_row img {
+  margin-right: 32px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.service .service_brends_row img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+.service .service_brends_row img:last-child {
+  margin-right: 0;
+}
