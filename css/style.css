@@ -2064,6 +2064,42 @@ h4 {
 .productCard .productCard_primary_info_descr_parameter {
   margin-right: 12px;
 }
+.productCard .productCard_primary_info_descr_parameter p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1D1E26;
+}
+.productCard .productCard_primary_info_descr_quantity p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1D1E26;
+}
+.productCard .productCard_primary_info_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.productCard .productCard_primary_info_bottom_status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.productCard .productCard_primary_info_bottom_status p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
 .productCard .productCard_primary_info_bt_price {
   width: 115px;
   height: 48px;
@@ -2670,26 +2706,10 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
-.repairParts .repairParts_filter_result_card_bottom_status span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: block;
-  margin-right: 9px;
-}
 .repairParts .repairParts_filter_result_card_bottom_status p {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-}
-.repairParts .status_green {
-  background-color: #88CC00;
-}
-.repairParts .status_yellow {
-  background-color: #FFC000;
-}
-.repairParts .status_red {
-  background-color: #f00;
 }
 .repairParts .repairParts_filter_result_card_btn {
   margin-left: auto;
@@ -2791,6 +2811,33 @@ h4 {
   border-radius: 12px;
   padding: 16px;
 }
+.status_green {
+  background-color: #88CC00;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 9px;
+}
+
+.status_yellow {
+  background-color: #FFC000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 9px;
+}
+
+.status_red {
+  background-color: #f00;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 9px;
+}
+
 .autoGraders .autoGraders_title {
   margin-bottom: 64px;
 }

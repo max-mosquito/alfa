@@ -1780,8 +1780,34 @@ h4{
 	}
 	.productCard_primary_info_descr_parameter {
 		margin-right: 12px;
+		p{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 18px;
+			color:$bh;
+		}
 	}
 	.productCard_primary_info_descr_quantity {
+		p{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 18px;
+			color:$bh;
+		}
+	}
+	.productCard_primary_info_bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.productCard_primary_info_bottom_status{
+		display: flex;
+		align-items: center;
+		p{
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 18px;
+		}
 	}
 	.productCard_primary_info_btn {
 	}
@@ -2318,26 +2344,13 @@ h4{
 		display: flex;
 		align-items: center;
 		span{
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			display: block;
-			margin-right: 9px;
+			
 		}
 		p{
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 18px;
 		}
-	}
-	.status_green {
-		background-color: #88CC00;
-	}
-	.status_yellow {
-		background-color: #FFC000;
-	}
-	.status_red {
-		background-color: #f00;
 	}
 	.repairParts_filter_result_card_btn {
 		margin-left: auto;
@@ -2425,6 +2438,32 @@ h4{
 	}
 }
 // -----end repairParts------
+// -----start status------
+.status_green {
+	background-color: #88CC00;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: block;
+	margin-right: 9px;
+}
+.status_yellow {
+	background-color: #FFC000;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: block;
+	margin-right: 9px;
+}
+.status_red {
+	background-color: #f00;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: block;
+	margin-right: 9px;
+}
+// -----end status------
 // -----start autoGraders------
 .autoGraders{
 
