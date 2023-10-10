@@ -2791,3 +2791,101 @@ h4 {
   border-radius: 12px;
   padding: 16px;
 }
+.autoGraders .autoGraders_tabs_headers {
+  margin-bottom: 32px;
+}
+.autoGraders .autoGraders_tabs_headers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.autoGraders .autoGraders_tabs_item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 17px 32px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.autoGraders .autoGraders_tabs_item:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: #FF671F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.autoGraders .autoGraders_tabs_item.active:after {
+  width: 100%;
+}
+.autoGraders .autoGraders_tabs_content {
+  position: relative;
+  margin-bottom: 64px;
+}
+.autoGraders .autoGraders_tabs_content_item {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+}
+.autoGraders .autoGraders_tabs_content_item.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+.autoGraders .autoGraders_tabs_content_item_row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 64px;
+}
+.autoGraders .autoGraders_tabs_content_item_card {
+  border: 1px solid #ACAFBF;
+  border-radius: 12px;
+  padding: 16px;
+}
+.autoGraders .autoGraders_tabs_content_item_card_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1D1E26;
+}
+.autoGraders .autoGraders_tabs_content_item_info {
+  background-color: #F5F6FA;
+  padding: 16px;
+}
+.autoGraders .autoGraders_tabs_content_item_info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+  color: #1D1E26;
+  max-width: 504px;
+  width: 100%;
+}
+.autoGraders .autoGraders_tabs_content_item_info ul {
+  max-width: 504px;
+  width: 100%;
+  margin-left: 32px;
+}
+.autoGraders .autoGraders_tabs_content_item_info ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  list-style: disc;
+  color: #1D1E26;
+}

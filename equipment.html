@@ -138,12 +138,12 @@
          <div class="repairParts_tabs">
             <div class="repairParts_tabs_headers">
                <ul>
-                  <li class="repairParts_tabs_headers_item active">Запчасти</li>
-                  <li class="repairParts_tabs_headers_item">Навесное оборудование</li>
+                  <li class="repairParts_tabs_headers_item">Запчасти</li>
+                  <li class="repairParts_tabs_headers_item active">Навесное оборудование</li>
                </ul>
             </div>
             <div class="repairParts_tabs_content">
-               <div class="repairParts_tabs_content_item active">
+               <div class="repairParts_tabs_content_item ">
                   <div class="repairParts_tabs_content_select">
                      <div class="repairParts_tabs_content_select_label">
                         <p>Тип техники</p>
@@ -186,7 +186,7 @@
                      <button class="btn repairParts_tabsbtn_reset">Сбросить</button>
                   </div>
                </div>
-               <div class="repairParts_tabs_content_item equipment_tabs_content_item">
+               <div class="repairParts_tabs_content_item active equipment_tabs_content_item">
                   <div class="equipment_row">
                      <div class="equipment_row_card">
                         <div class="equipment_row_card_pic">
@@ -235,16 +235,16 @@
                <form class="main_form">
                   <div class="main_form_name">
                      <label for="name"> Имя</label>
-                     <input type="text" name="name" class="name" id="name" placeholder="Введите текст">
+                     <input required type="text" name="name" class="name" id="name" placeholder="Введите текст">
                   </div>
                   <div class="twohalf">
                      <div class="main_form_phone">
                         <label for="phone">Телефон </label>
-                        <input type="phone" name="phone" class="phone" id="phone" placeholder="Введите телефон">
+                        <input required type="phone" name="phone" class="phone" id="phone" placeholder="Введите телефон">
                      </div>
                      <div class="main_form_email">
                         <label for="email">Электронная почта</label>
-                        <input type="email" name="email" class="email" id="email" placeholder="Введите почту">
+                        <input required type="email" name="email" class="email" id="email" placeholder="Введите почту">
                      </div>
                   </div>
                   <div class="checkbox_btn">
