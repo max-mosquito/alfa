@@ -128,17 +128,27 @@
          <div class="sendme_content">
             <div class="sendme_info">
                <div class="sendme_info_title">
-                  <p>Напишите нам</p>
+                  <p>Заявка на лизинг</p>
                </div>
                <div class="sendme_info_text">
-                  <p>Если у вас есть вопросы или вы не знаете, что выбрать, оставьте свой номер телефона: мы позвоним, чтобы ответить на все ваши вопросы.</p>
+                  <p>Обращайтесь, наши специалисты подберут выгодную программу финансирования!</p>
                </div>
             </div>
             <div class="sendme_form">
-               <form class="main_form">
+               <form class="lising_form">
                   <div class="main_form_name">
                      <label for="name"> Имя</label>
                      <input type="text" name="name" class="name" id="name" placeholder="Введите текст" required>
+                  </div>
+                  <div class="twohalf">
+                     <div class="main_form_company">
+                        <label for="company">Компания </label>
+                        <input required type="text" name="company" class="company" id="company" placeholder="Введите название">
+                     </div>
+                     <div class="main_form_inn">
+                        <label for="inn">ИНН (свой или компании)</label>
+                        <input required type="text" name="inn" class="inn" id="inn" placeholder="Введите ИНН">
+                     </div>
                   </div>
                   <div class="twohalf">
                      <div class="main_form_phone">
@@ -149,6 +159,22 @@
                         <label for="email">Электронная почта</label>
                         <input required type="email" name="email" class="email" id="email" placeholder="Введите почту">
                      </div>
+                  </div>
+                  <div class="lising_form_select">
+                     <label for="lising_company">Лизинговая компания</label>
+                     <select name="lising_company" id="lising_company">
+                        <option value="0">Выберите лизинговую компанию</option>
+                        <option value="1">Рога и копыта №1</option>
+                        <option value="2">Рога и копыта №2</option>
+                     </select>
+                  </div>
+                  <div class="lising_form_select">
+                     <label for="office">Лизинговая компания</label>
+                     <select name="office" id="office">
+                        <option value="0">Отдел продаж</option>
+                        <option value="1">Офис №1</option>
+                        <option value="2">Офис №2</option>
+                     </select>
                   </div>
                   <div class="checkbox_btn">
                      <div class="main_form_checkbox">
