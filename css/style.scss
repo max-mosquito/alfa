@@ -2999,5 +2999,32 @@ h4{
 	border: 1px solid #27203E;
 	color:$bh;
 }
-
 // ----end about----
+// ----start lising----
+.lising {
+	margin-bottom: 64px;
+}
+.lising_wrap {
+}
+.lising_title {
+	margin-bottom: 32px;
+}
+.lising_row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+}
+@media (max-width:767px) {
+	.lising_row{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.lising_card {
+	p{
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		color:$bh;
+	}
+}
+// ----end lising----
