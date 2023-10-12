@@ -52,12 +52,6 @@ h3{
 	line-height: 32px;
 	color:$bh;
 }
-@media (max-width:767px) {
-	h3{
-		font-size: 20px;
-		line-height: 1.2;
-	}
-}
 h4{
 	font-size: 18px;
 	font-weight: 500;
@@ -74,7 +68,8 @@ h4{
 	margin: 0 auto;
 }
 .header_indi {
-	height: 72px;
+	// height: 72px;
+	padding: 19px 0;
 	background-color: #F1C400;
 	display: flex;
 	justify-content: center;
@@ -87,6 +82,7 @@ h4{
 	width: 100%;
 }
 .header_indi_text {
+	margin-right: 16px;
 	p{
 		font-size: 16px;
 		font-weight: 500;
@@ -104,6 +100,11 @@ h4{
 	}
 }
 .header_indi_callback {
+}
+@media (max-width:575px) {
+	.header_indi_callback{
+		flex: 0 0 auto;
+	}
 }
 .header_indi_callback_phone {
 	margin-bottom: 4px;
@@ -344,7 +345,7 @@ h4{
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 18px;
-				color:$bt;
+				color:$bh;
 				padding: 12px 16px;
 				display: block;
 			}
@@ -944,7 +945,8 @@ h4{
 	border-radius: 12px;
 	padding: 32px;
 	display: grid;
-	grid-template-columns: repeat(2, 33.3% 66.6%);
+	grid-template-columns: 344px 592px;
+	justify-content: space-between;
 }
 @media (max-width:991px) {
 	.sendme_content{
@@ -952,6 +954,7 @@ h4{
 	}
 }
 .sendme_info {
+	margin-right: 16px;
 }
 @media (max-width:991px){
 	.sendme_info{
