@@ -442,6 +442,60 @@
       </div>
    </footer>
    <!-- ----end footer---- -->
+   <!-- ----start popup_callback---- -->
+   <div class="popup_callback" id="popup_callback">
+      <div class="popup_callback_wrap">
+         <div class="popup_callback_close" id="popup_callback_close">
+            <img loading="lazy" src="img/close_popup.svg" alt=" ">
+         </div>
+         <div class="popup_callback_title">
+            <p>Заказать обратный звонок</p>
+         </div>
+         <div class="popup_callback_text">
+            <p>Наш специалист перезвонит вам, чтобы рассказать о компании и ответить на возникшие вопросы</p>
+         </div>
+         <form class="popup_form">
+            <div class="popup_form_item">
+               <label for="name">Имя</label>
+               <input type="text" name="name" id="name" placeholder="Введите текст" class="popup_form_input">
+            </div>
+            <div class="popup_form_item">
+               <label for="tel">Телефон</label>
+               <input type="tel" name="tel" id="tel" placeholder="Введите телефон" class="popup_form_input">
+            </div>
+            <div class="popup_form_item">
+               <label for="email">Электронная почта</label>
+               <input type="email" name="email" id="email" placeholder="Электронная почта" class="popup_form_input">
+            </div>
+            <div class="popup_form_checkbox">
+               <input type="checkbox" name="checkbox" id="checkbox" required>
+               <label for="checkbox">Я согласен(а) на обработку <a href="#">персональных данных</a>.</label>
+            </div>
+            <div class="popup_form__btn">
+               <button class="btn popup_btn">Отправить</button>
+            </div>
+         </form>
+      </div>
+   </div>
+   <!-- ----end popup_callback----- -->
+   <!-- ----start popup_confirm----- -->
+   <div class="popup_confirm" id="popup_confirm">
+      <div class="popup_confirm_wrap">
+         <div class="popup_confirm_close popup_confirm_close_btn">
+            <img loading="lazy" src="img/close_popup.svg" alt=" ">
+         </div>
+         <div class="popup_confirm_title">
+            <p>Заявка успешно отправлена, спасибо!</p>
+         </div>
+         <div class="popup_confirm_text">
+            <p>Наш специалист в ближайшее время свяжется с вами</p>
+         </div>
+         <div class="popup_confirm_btn">
+            <button class="btn confirm_btn popup_confirm_close_btn">Завершить</button>
+         </div>
+      </div>
+   </div>
+   <!-- ----end popup_confirm----- -->
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/about_swiper.js"></script>
    <script src="js/popup_callback.js"></script>
