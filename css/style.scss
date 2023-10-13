@@ -124,12 +124,13 @@ h4{
 	}
 }
 .header_indi_callback_link {
-	a{
+	p{
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 12px;
 		color:$bh;
 		text-decoration: underline;
+		cursor: pointer;
 	}
 }
 @media (max-width:767px) {
@@ -4291,9 +4292,11 @@ h4{
 		line-height: 18px;
 	}
 }
-.contacts_tabs_geo_map {
-	img{
-		width: 100%;
+@media (max-width:991px) {
+	.contacts_tabs_geo_map {
+		img{
+			width: 100%;
+		}
 	}
 }
 // ----end contacts----

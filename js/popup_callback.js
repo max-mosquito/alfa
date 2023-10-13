@@ -3,7 +3,8 @@ const headerIndiCallbackLink = document.getElementById('header_indi_callback_lin
 const popupCallback = document.getElementById('popup_callback');
 const popupCallbackClose = document.getElementById('popup_callback_close');
 
-headerIndiCallbackLink.addEventListener('click', () => {
+headerIndiCallbackLink.addEventListener('click', (e) => {
+  e.preventDefault()
   popupCallback.classList.add('active');
   document.body.classList.add('lock');
 })
