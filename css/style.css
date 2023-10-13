@@ -4625,6 +4625,10 @@ h4 {
   margin-bottom: 64px;
 }
 
+.contacts_title {
+  margin-bottom: 64px;
+}
+
 .contacts_tabs_headers {
   margin-bottom: 32px;
   margin-bottom: 48px;
@@ -4665,6 +4669,10 @@ h4 {
 }
 .contacts_tabs_headers_item.active:after {
   width: 100%;
+}
+
+.contacts_tabs_content {
+  position: relative;
 }
 
 .contacts_tabs_content_item {
