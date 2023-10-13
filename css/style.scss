@@ -665,10 +665,12 @@ h4{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 24px;
+	margin-right: 16px;
 }
 @media (max-width:991px) {
 	.map_selects{
 		margin-bottom: 20px;
+		margin-right: 0;
 	}
 }
 @media (max-width:767px) {
@@ -677,7 +679,7 @@ h4{
 		row-gap: 15px;
 	}
 }
-@media (max-width:575pc) {
+@media (max-width:575px) {
 	.map_selects{
 		width: 100%;
 	}
@@ -747,6 +749,7 @@ h4{
 	}
 }
 .map_descr_text_sale {
+	margin-right: 32px;
 	&:before{
 		background-color: #27203E;
 	}
@@ -1601,6 +1604,8 @@ h4{
 	padding: 8px 16px;
 	ul{
 		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
 		li{
 			font-size: 12px;
 			font-weight: 400;
@@ -1759,9 +1764,9 @@ h4{
 	}
 }
 .singleCategory_row_card_descr {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
 	justify-content: space-between;
-	align-items: center;
 }
 .singleCategory_row_card_descr_parameter {
 	max-width: 204px;
@@ -1978,6 +1983,11 @@ h4{
 		width: 115px;
 		height: 48px;
 	}
+	@media (max-width:575px) {
+		.productCard_primary_info_bt_price{
+			width: 100%;
+		}
+	}
 	.productCard_primary_info_ads{
 		width: 100%;
 		height: 72px;
@@ -2016,7 +2026,7 @@ h4{
 	}
 	@media (max-width:575px) {
 		.productCard_secondary_tabs_headers{
-			display: inline-block;
+			
 		}
 	}
 	.productCard_secondary_tabs_headers_item {
@@ -2056,10 +2066,12 @@ h4{
 		transition: 0.3s;
 		padding: 16px;
 		height: 0;
+		z-index: -1;
 		&.active{
 			opacity: 1;
 			position: relative;
 			height: auto;
+			z-index: 1;
 		}
 		p{
 			font-size: 16px;
@@ -2267,17 +2279,55 @@ h4{
 		}
 	}
 }
+@media (max-width:767px) {
+	.singleCategory_FilterPanel{
+		ul{
+			flex-direction: column;
+			align-items: flex-start;
+			li{
+				width: 100%;
+			}
+		}
+	}
+}
 // ----end filter---- 
 // ----start service----
 .service {
 
 	.service_wrap {
 	}
+	.service_wrap_bann{
+		margin-bottom: 64px;
+		background: url("../img/bann-service.png") center/cover no-repeat;
+		border-radius: 12px;
+		padding: 46px 0px;
+		h2{
+			color:#fff;
+			position: relative;
+			padding-left: 48px;
+			padding-right: 20px;
+			&:before{
+				position: absolute;
+				content: "";
+				height: 100%;
+				width: 16px;
+				top: 0;
+				left: 16px;
+				background-color: $bo;;
+			}
+		}
+	}
 	.service_typeWork {
 		display: grid;
 		grid-template-columns: repeat(2, auto);
 		column-gap: 32px;
 		margin-bottom: 112px;
+		align-items: start;
+	}
+	@media (max-width:767px) {
+		.service_typeWork{
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 	.service_typeWork_header{
 		display: flex;
@@ -2285,14 +2335,34 @@ h4{
 		align-items: flex-start;
 		flex-direction: column;
 	}
+	@media (max-width:767px) {
+		.service_typeWork_header{
+			margin-bottom: 16px;
+		}
+	}
 	.service_typeWork_title {
+		margin-bottom: 32px;
 	}
 	.service_typeWork_pic {
+		border-radius: 12px;
+		img{
+			width: 100%;
+		}
 	}
 	.service_typeWork_content {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 16px;
+	}
+	@media (max-width:991px) {
+		.service_typeWork_content{
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (max-width:575px) {
+		.service_typeWork_content{
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 	.service_typeWork_content_card {
 		background-color: #F5F6FA;
@@ -2302,6 +2372,11 @@ h4{
 		justify-content: flex-start;
 		align-items: flex-start;
 		flex-direction: column;
+	}
+	@media (max-width:575px) {
+		.service_typeWork_content_card{
+			padding-bottom: 64px;
+		}
 	}
 	.service_typeWork_content_card_pic {
 		margin-bottom: 16px;
@@ -2326,9 +2401,11 @@ h4{
 	}
 	.service_brends_row {
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
 		img{
 			margin-right: 32px;
+			margin-bottom: 10px;
 			filter: grayscale(1);
 			transition: 0.3s;
 			&:hover{
@@ -2355,6 +2432,11 @@ h4{
 		gap: 32px;
 		margin-bottom: 64px;
 	}
+	@media (max-width:991px) {
+		.repairParts_info{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
 	.repairParts_info_pic {
 		width: 432px;
 		height: 236px;
@@ -2362,10 +2444,21 @@ h4{
 			width: 100%;
 		}
 	}
+	@media (max-width:575px) {
+		.repairParts_info_pic{
+			width: 100%;
+			height: auto;
+		}
+	}
 	.repairParts_info_descr {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 32px;
+	}
+	@media (max-width:575px) {
+		.repairParts_info_descr{
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 	.repairParts_info_descr_card {
 		p{
@@ -2942,6 +3035,13 @@ h4{
 	border-radius: 12px;
 	margin-bottom: 64px;
 }
+@media (max-width:767px) {
+	.about_indexes{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 16px;
+	}
+}
 .about_indexes_title {
 	h2{
 		color:#fff;
@@ -2952,6 +3052,16 @@ h4{
 	grid-template-columns: repeat(3, 1fr);
 	row-gap: 16px;
 	width: 100%;
+}
+@media (max-width:991px) {
+	.about_indexes_row{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width:575px) {
+	.about_indexes_row{
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 .about_indexes_card {
 	padding: 16px;
@@ -3113,7 +3223,7 @@ h4{
 	grid-template-columns: repeat(2, 1fr);
 	gap: 32px;
 }
-@media (max-width:1200px) {
+@media (max-width:575px) {
 	.about_bosses_row{
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -3128,10 +3238,20 @@ h4{
 	align-items: center;
 	margin-bottom: 40px;
 }
+@media (max-width:991px) {
+	.about_bosses_card_content{
+		flex-direction: column;
+	}
+}
 .about_bosses_card_pic {
 	flex: 0 0 96px;
 	height: 96px;
 	margin-right: 32px;
+}
+@media (max-width:991px) {
+	.about_bosses_card_pic{
+		margin-right: 0;
+	}
 }
 .about_bosses_card_info {
 }
@@ -3144,16 +3264,39 @@ h4{
 		color:$bh;
 	}
 }
+@media (max-width:991px){
+	.about_bosses_card_name{
+		text-align: center;
+	}
+}
 .about_bosses_card_descr {
 }
+@media (max-width:991px) {
+	.about_bosses_card_descr{
+		text-align: center;
+	}
+}
 .about_bosses_card_btns {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
 	justify-content: space-between;
-	align-items: center;
+}
+@media (max-width:1200px) {
+	.about_bosses_card_btns{
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 .btn_ask {
 	width: 220px;
 	height: 42px;
+	margin-right: 16px;
+}
+@media (max-width:1200px){
+	.btn_ask{
+		margin: 0 auto 16px;
+		max-width: 220px;
+		width: 100%;
+	}
 }
 .complaint {
 	width: 220px;
@@ -3161,6 +3304,13 @@ h4{
 	background-color: #fff;
 	border: 1px solid #27203E;
 	color:$bh;
+}
+@media (max-width:1200px){
+	.complaint{
+		margin: 0 auto;
+		max-width: 220px;
+		width: 100%;
+	}
 }
 // ----end about----
 // ----start lising----
@@ -3247,6 +3397,11 @@ h4{
 	gap: 32px;
 	margin-bottom: 32px;
 }
+@media (max-width:575px) {
+	.news_row{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
 .news_card {
 	background-color: #FAFAFC;
 	border-radius: 12px;
@@ -3254,6 +3409,11 @@ h4{
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
+}
+@media (max-width:991px) {
+	.news_card{
+		flex-direction: column;
+	}
 }
 .news_card_pic {
 	flex: 0 0 194px;
@@ -3265,6 +3425,12 @@ h4{
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+@media (max-width:991px){
+	.news_card_pic{
+		margin-right: 0;
+		margin-bottom: 32px;
 	}
 }
 .news_card_content {
@@ -3313,6 +3479,11 @@ h4{
 		color:$bh;
 	}
 }
+@media (max-width:991px) {
+	.news_card_content_title{
+		margin-bottom: 16px;
+	}
+}
 .news_card_content_details {
 	text-align: right;
 	width: 100%;
@@ -3332,6 +3503,11 @@ h4{
 	background-color: #fff;
 	border:2px solid $bh;
 	color:$bh;
+}
+@media (max-width:575px) {
+	.btn_more{
+		width: 100%;
+	}
 }
 // ----end news----
 // ----start single_news----
