@@ -822,12 +822,14 @@ h4{
 .comments_wrap{
 	position: relative;
 	left: calc(50vw - 552px);
-	max-width: 1500px;
+	// max-width: 1500px;
+	width: calc(100vw - (50vw - 552px));
 }
 @media (max-width:1146px) {
 	.comments_wrap{
-		left: 0;
-		padding: 0 20px;
+		left: 0px;
+		max-width: 1000px;
+		width: 100%;
 	}
 }
 .comments_title {
