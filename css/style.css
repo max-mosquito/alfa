@@ -1,4 +1,4 @@
-@import url("../fonts/Roboto/stylesheet.css");
+@import url("../fonts/HelveticaNeue/stylesheet.css");
 *,
 *:before,
 *:after,
@@ -24,7 +24,7 @@ img {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   position: relative;
   color: #6C6F80;
   -webkit-transition: 0.3s;
@@ -4265,6 +4265,7 @@ h4 {
   -ms-grid-columns: 1fr;
   grid-template-columns: repeat(1, 1fr);
   gap: 16px;
+  margin-bottom: 32px;
 }
 
 .reviews_card {
@@ -4277,8 +4278,19 @@ h4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
+@media (max-width: 767px) {
+  .reviews_card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .reviews_card_pic {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 194px;
@@ -4358,6 +4370,12 @@ h4 {
   margin-bottom: 64px;
 }
 
+@media (max-width: 991px) {
+  .vacancy_tobe {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .vacancy_tobe_descr_title {
   padding-left: 80px;
   margin-bottom: 32px;
@@ -4381,6 +4399,18 @@ h4 {
   color: #1D1E26;
 }
 
+@media (max-width: 575px) {
+  .vacancy_tobe_descr_title {
+    padding-left: 0;
+  }
+  .vacancy_tobe_descr_title:before {
+    content: none;
+  }
+  .vacancy_tobe_descr_title p {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
 .vacancy_tobe_descr_text p {
   font-size: 16px;
   font-weight: 400;
@@ -4390,6 +4420,10 @@ h4 {
 }
 .vacancy_tobe_descr_text p:last-child {
   margin-bottom: 0;
+}
+
+.vacancy_tobe_pic img {
+  width: 100%;
 }
 
 .vacancy_tabs {
@@ -4473,6 +4507,9 @@ h4 {
   border-bottom: none;
 }
 
+.vacancy_item_name {
+  margin-right: 16px;
+}
 .vacancy_item_name p {
   font-size: 18px;
   font-weight: 400;
@@ -4500,6 +4537,11 @@ h4 {
   background: url("../img/arr_r.svg") center no-repeat;
 }
 
+@media (max-width: 575px) {
+  .hide_575 {
+    display: none;
+  }
+}
 .vacancy_concept {
   margin-bottom: 64px;
 }
@@ -4648,6 +4690,13 @@ h4 {
   margin-bottom: 64px;
 }
 
+@media (max-width: 575px) {
+  .contacts_tabs_persons_wrap {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 .contacts_tabs_persons {
   border-bottom: 1px solid #E1E3EB;
   padding-top: 32px;
@@ -4678,6 +4727,12 @@ h4 {
   padding-bottom: 32px;
 }
 
+@media (max-width: 991px) {
+  .contacts_tabs_persons_row {
+    -ms-grid-columns: (auto)[1];
+    grid-template-columns: repeat(1, auto);
+  }
+}
 .contacts_tabs_persons_list {
   display: -ms-grid;
   display: grid;
@@ -4686,6 +4741,12 @@ h4 {
   gap: 32px;
 }
 
+@media (max-width: 767px) {
+  .contacts_tabs_persons_list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .contacts_tabs_person {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4769,10 +4830,22 @@ h4 {
   grid-template-columns: repeat(2, auto);
 }
 
+@media (max-width: 991px) {
+  .contacts_tabs_geo {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .contacts_tabs_geo_descr {
   padding: 32px 16px;
 }
 
+@media (max-width: 991px) {
+  .contacts_tabs_geo_descr {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+}
 .contacts_tabs_geo_descr_city {
   margin-bottom: 16px;
 }
@@ -4857,4 +4930,8 @@ h4 {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.contacts_tabs_geo_map img {
+  width: 100%;
 }

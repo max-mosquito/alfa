@@ -1,5 +1,5 @@
-// @import url('../fonts/HelveticaNeue/stylesheet.css');
-@import url('../fonts/Roboto/stylesheet.css');
+@import url('../fonts/HelveticaNeue/stylesheet.css');
+// @import url('../fonts/Roboto/stylesheet.css');
 *,
 *:before,
 *:after,
@@ -25,7 +25,7 @@ $bt:#6C6F80;
 $bo: #FF671F;
 $by: #F1C400;
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
 	position: relative;
 	color:$bt;
 	transition: 0.3s;
@@ -3699,6 +3699,7 @@ h4{
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	gap: 16px;
+	margin-bottom: 32px;
 }
 .reviews_card {
 	background-color: #FAFAFC;
@@ -3706,6 +3707,12 @@ h4{
 	border-radius: 12px;
 	display: flex;
 	justify-content: flex-start;
+	align-items: flex-start;
+}
+@media (max-width:767px) {
+	.reviews_card{
+		flex-direction: column;
+	}
 }
 .reviews_card_pic {
 	flex: 0 0 194px;
@@ -3777,6 +3784,11 @@ h4{
 	gap: 32px;
 	margin-bottom: 64px;
 }
+@media (max-width:991px) {
+	.vacancy_tobe{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
 .vacancy_tobe_descr {
 }
 .vacancy_tobe_descr_title {
@@ -3800,6 +3812,18 @@ h4{
 		color:$bh;
 	}
 }
+@media (max-width:575px) {
+	.vacancy_tobe_descr_title{
+		padding-left: 0;
+		&:before{
+			content: none;
+		}
+		p{
+			font-size: 24px;
+			line-height: 1.2;
+		}
+	}
+}
 .vacancy_tobe_descr_text {
 	p{
 		font-size: 16px;
@@ -3813,6 +3837,9 @@ h4{
 	}
 }
 .vacancy_tobe_pic {
+	img{
+		width: 100%;
+	}
 }
 .vacancy_tabs{
 	margin-bottom: 64px;
@@ -3886,6 +3913,7 @@ h4{
 	}
 }
 .vacancy_item_name {
+	margin-right: 16px;
 	p{
 		font-size: 18px;
 		font-weight: 400;
@@ -3911,6 +3939,11 @@ h4{
 			transform: translateY(-50%);
 			background: url("../img/arr_r.svg") center no-repeat;
 		}
+	}
+}
+@media (max-width:575px) {
+	.hide_575{
+		display: none;
 	}
 }
 .vacancy_concept {
@@ -4053,6 +4086,12 @@ h4{
 	padding: 0 32px 32px 32px;
 	margin-bottom: 64px;
 }
+@media (max-width:575px) {
+	.contacts_tabs_persons_wrap{
+		padding: 0;
+		box-shadow: none;
+	}
+}
 .contacts_tabs_persons {
 	border-bottom: 1px solid #E1E3EB;
 	padding-top: 32px;
@@ -4076,10 +4115,20 @@ h4{
 	align-items: start;
 	padding-bottom: 32px;
 }
+@media (max-width:991px) {
+	.contacts_tabs_persons_row{
+		grid-template-columns: repeat(1, auto);
+	}
+}
 .contacts_tabs_persons_list {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 32px;
+}
+@media (max-width:767px) {
+	.contacts_tabs_persons_list{
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 .contacts_tabs_person {
 	display: flex;
@@ -4152,8 +4201,19 @@ h4{
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 }
+@media (max-width:991px) {
+	.contacts_tabs_geo{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
 .contacts_tabs_geo_descr {
 	padding: 32px 16px;
+}
+@media (max-width:991px){
+	.contacts_tabs_geo_descr{
+		padding: 0;
+		margin-bottom: 32px;
+	}
 }
 .contacts_tabs_geo_descr_city {
 	margin-bottom: 16px;
@@ -4232,5 +4292,8 @@ h4{
 	}
 }
 .contacts_tabs_geo_map {
+	img{
+		width: 100%;
+	}
 }
 // ----end contacts----
