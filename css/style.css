@@ -1809,8 +1809,8 @@ h4 {
 
 .popup_confirm_close {
   position: absolute;
-  top: 37px;
-  right: 37px;
+  top: 25px;
+  right: 25px;
   cursor: pointer;
 }
 

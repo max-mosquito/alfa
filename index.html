@@ -606,19 +606,19 @@
          <form class="popup_form">
             <div class="popup_form_item">
                <label for="name">Имя</label>
-               <input type="text" name="name" id="name" placeholder="Введите текст" class="popup_form_input">
+               <input type="text" name="name" id="name" placeholder="Введите текст" class="popup_form_input" required>
             </div>
             <div class="popup_form_item">
                <label for="tel">Телефон</label>
-               <input type="tel" name="tel" id="tel" placeholder="Введите телефон" class="popup_form_input">
+               <input type="tel" name="tel" id="tel" placeholder="Введите телефон" class="popup_form_input" required>
             </div>
             <div class="popup_form_item">
                <label for="email">Электронная почта</label>
-               <input type="email" name="email" id="email" placeholder="Электронная почта" class="popup_form_input">
+               <input type="email" name="email" id="email" placeholder="Электронная почта" class="popup_form_input" required>
             </div>
             <div class="popup_form_checkbox">
-               <input type="checkbox" name="checkbox" id="checkbox" required>
-               <label for="checkbox">Я согласен(а) на обработку <a href="#">персональных данных</a>.</label>
+               <input type="checkbox" name="popup_checkbox" id="popup_checkbox" required>
+               <label for="popup_checkbox">Я согласен(а) на обработку <a href="#">персональных данных</a>.</label>
             </div>
             <div class="popup_form__btn">
                <button class="btn popup_btn">Отправить</button>
@@ -647,6 +647,7 @@
    <!-- ----end popup_confirm----- -->
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/index_swiper.js"></script>
+   <script src="js/main_form.js"></script>
    <script src="js/popup_callback.js"></script>
    <script src="js/script.js"></script>
 </body>
