@@ -25,42 +25,6 @@
          </div>
       </div>
       <div class="header_top">
-         <!-- ----start dropdown_header----  -->
-         <div class="dropdown_header" id="dropdown_header">
-            <div class="dropdown_header_wrap wrap">
-               <div class="dropdown_header_list">
-                  <div class="dropdown_header_search">
-                     <input type="text" placeholder="Какую технику вы ищите?">
-                  </div>
-                  <ul class="dropdown_header_list_tech">
-                     <li class="dropdown_header_lis_item">Весь каталог</li>
-                     <li class="dropdown_header_lis_item">Экскаваторы</li>
-                     <li class="dropdown_header_lis_item">Экскаваторы-погрузчики</li>
-                     <li class="dropdown_header_lis_item">Фронтальные погрузчики</li>
-                     <li class="dropdown_header_lis_item">Автогрейдеры</li>
-                     <li class="dropdown_header_lis_item">Бульдозеры</li>
-                     <li class="dropdown_header_lis_item">Дорожные катки</li>
-                     <li class="dropdown_header_lis_item">Погрузчики с бортовым поворотом</li>
-                     <li class="dropdown_header_lis_item">Вилочные погрузчики</li>
-                     <li class="dropdown_header_lis_item">Асфальтоукладчики</li>
-                     <li class="dropdown_header_lis_item">Карьерные самосвалы</li>
-                     <li class="dropdown_header_lis_item">Автокраны</li>
-                     <li class="dropdown_header_lis_item">Дорожные фрезы</li>
-                     <li class="dropdown_header_lis_item">Буровые установки</li>
-                     <li class="dropdown_header_lis_item">Мобильные рабочие платформы</li>
-                     <li class="dropdown_header_lis_item">Подъёмники ножного типа</li>
-                     <li class="dropdown_header_lis_item">Установки для буровзрывных работ</li>
-                     <li class="dropdown_header_lis_item">Складская техника</li>
-                  </ul>
-               </div>
-               <div class="dropdown_header_pic">
-                  <img loading="lazy" class="dropdown_header_pic_item" src="img/с1.webp" alt=" ">
-                  <img loading="lazy" class="dropdown_header_pic_item" src="img/с2.webp" alt=" ">
-                  <img loading="lazy" class="dropdown_header_pic_item" src="img/с3.webp" alt=" ">
-               </div>
-            </div>
-         </div>
-         <!-- ----end dropdown_header----  -->
          <div class="header_top_wrap wrap">
             <div class="header_top_logo">
                <img loading="lazy" class="header_top_logo1" src="img/logo_header_as.svg" alt=" ">
@@ -68,16 +32,65 @@
                <img loading="lazy" class="header_top_logo2" src="img/logo-LG.svg" alt=" ">
             </div>
             <nav class="header_top_menu" id="header_top_menu">
-               <ul>
-                  <li id="catalog"><a href="/catalog_all_category.html">Каталог техники <span>
+               <div class="close_top_menu" id="close_top_menu"></div>
+               <h2>Меню</h2>
+               <ul class="header_top_menu_list">
+                  <li class="header_top_menu_list_item dropdown_btn dropdown_catalog_btn" id="catalog"><p class="header_top_menu_list_item_link">Каталог техники <span>
                      <svg width="12" height="8" viewBox="0 0 12 8" fill="#27203E" xmlns="http://www.w3.org/2000/svg">
                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.94467L1.41 0L0 1.52227L6 8L12 1.52227L10.59 0Z" />
-                     </svg>
-                  </span></a></li>
-                  <li><a href="/service.html">Сервис</a></li>
-                  <li><a href="/repair_parts.html">Запчасти</a></li>
-                  <li><a href="#">Об АльфаСервис</a></li>
-                  <li><a href="#">Контакты</a></li>
+                     </svg></span></p>
+                     <div class="dropdown_catalog dropdwun_list">
+                        <div class="dropdown_header_wrap wrap">
+                           <div class="dropdown_header_list">
+                              <div class="dropdown_header_search">
+                                 <input type="text" placeholder="Какую технику вы ищите?">
+                              </div>
+                              <ul class="dropdown_header_list_tech">
+                                 <li class="dropdown_header_list_item"><a href="/catalog_all_category.html" class="dropdown_header_list_item_link">Весь каталог</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="/single_category_excavators.html" class="dropdown_header_list_item_link">Экскаваторы</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Экскаваторы-погрузчики</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Фронтальные погрузчики</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Автогрейдеры</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Бульдозеры</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Дорожные катки</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Погрузчики с бортовым поворотом</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Вилочные погрузчики</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Асфальтоукладчики</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Карьерные самосвалы</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Автокраны</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Дорожные фрезы</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Буровые установки</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="/single_category_mob_rab_platf.html" class="dropdown_header_list_item_link">Мобильные рабочие платформы</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Подъёмники ножного типа</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="/single_category_burovzriv.html" class="dropdown_header_list_item_link">Установки для буровзрывных работ</a></li>
+                                 <li class="catalogBtn dropdown_header_list_item"><a href="#" class="dropdown_header_list_item_link">Складская техника</a></li>
+                              </ul>
+                           </div>
+                           <div class="dropdown_header_pic">
+                              <img loading="lazy" class="dropdown_header_pic_item" src="img/с1.jpg" alt=" ">
+                              <img loading="lazy" class="dropdown_header_pic_item" src="img/c2.png" alt=" ">
+                              <img loading="lazy" class="dropdown_header_pic_item" src="img/c3.jpg" alt=" ">
+                              <img loading="lazy" class="dropdown_header_pic_item" src="img/c4.png" alt=" ">
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="header_top_menu_list_item"><a href="/service.html" class="header_top_menu_list_item_link">Сервис</a></li>
+                  <li class="header_top_menu_list_item"><a href="/repair_parts.html" class="header_top_menu_list_item_link">Запчасти</a></li>
+                  <li class="header_top_menu_list_item dropdown_btn dropdown_about_btn">
+                     <p class="header_top_menu_list_item_link">Об АльфаСервис&nbsp;&nbsp;<span>
+                     <svg width="12" height="8" viewBox="0 0 12 8" fill="#27203E" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.59 0L6 4.94467L1.41 0L0 1.52227L6 8L12 1.52227L10.59 0Z" />
+                     </svg></span></p>
+                     <ul class="dropdown_about_list dropdwun_list">
+                        <li><a href="/about.html">О компании</a></li>
+                        <li><a href="/lising.html">Лизинг</a></li>
+                        <li><a href="/news.html">Новости</a></li>
+                        <li><a href="/reviews.html">Отзывы</a></li>
+                        <li><a href="/vacansy.html">Вакансии</a></li>
+                     </ul>
+                  </li>
+                  <li class="header_top_menu_list_item"><a href="/contacts.html" class="header_top_menu_list_item_link">Контакты</a></li>
                </ul>
             </nav>
             <div class="burger" id="burger"></div>
