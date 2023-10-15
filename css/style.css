@@ -689,13 +689,10 @@ h4 {
   color: #fff;
   border-radius: 12px;
   cursor: pointer;
-}
-
-.btn_hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.btn_hover:hover {
+.btn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
