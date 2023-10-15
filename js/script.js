@@ -32,6 +32,6 @@ catalogBtn.forEach((item, i) => {
 })
 
 //mask phone----------------
-maskPhone('.for_vilid_tel')
+maskPhone('.for_valid_tel')
 
 

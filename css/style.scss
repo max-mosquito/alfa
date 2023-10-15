@@ -226,11 +226,6 @@ h4{
 	flex-wrap: wrap;
 	gap: 8px;
 }
-@media (max-width:991px){
-	.dropdown_header_list_tech{
-		justify-content: center;
-	}
-}
 .dropdown_header_list_item{
 	padding: 12px 16px;
 	border: 1px solid #27203E;
@@ -316,8 +311,8 @@ h4{
 }
 .header_top_menu{
 	.close_top_menu{
-		width: 40px;
-		height: 40px;
+		width: 20px;
+		height: 20px;
 		background: url("../img/close.svg") center/contain no-repeat;
 		position: absolute;
 		top: 20px;
@@ -342,7 +337,7 @@ h4{
 		padding-top: 16px;
 		transition: 0.3s;
 		position: absolute;
-		top: -85px;
+		top: -95px;
 		left: 0;
 		width: 100%;
 		background-color: #fff;
@@ -383,6 +378,24 @@ h4{
 		margin-right: 0;
 		padding-top: 16px;
 		padding-bottom: 16px;
+	}
+}
+.hover_underline{
+	position: relative;
+	&:after{
+		transition: 0.3s;
+		position: absolute;
+		content: "";
+		width: 00%;
+		height: 1px;
+		left: 0;
+		bottom: 0;
+		background-color: $bo;;
+	}
+	&:hover{
+		&:after{
+			width: 100%;
+		}
 	}
 }
 .header_top_menu_list_item_link{
@@ -621,6 +634,12 @@ h4{
 	color:#fff;
 	border-radius: 12px;
 	cursor: pointer;
+}
+.btn_hover{
+	transition: 0.3s;
+	&:hover{
+		transform: scale(1.05);
+	}
 }
 .btn_search {
 	width: 224px;
@@ -1523,36 +1542,69 @@ h4{
 		display: flex;
 	}
 }
+@media (max-width:575px) {
+	.popup_callback{
+		align-items: center;
+	}
+}
 .popup_callback_wrap {
 	max-width: 422px;
+	width: 100%;
 	padding: 32px;
 	border-radius: 20px;
 	background-color: $bo;
 	margin-top: 50px;
 	position: relative;
 }
+@media (max-width:575px) {
+	.popup_callback_wrap{
+		max-width: 280px;
+		padding: 24px;
+		margin-top: 0;
+	}
+}
 .popup_callback_close{
 	position: absolute;
-	top: 37px;
-	right: 37px;
+	top: 15px;
+	right: 20px;
+	padding: 10px;
 	cursor: pointer;
 }
 .popup_callback_title {
+	padding-right: 32px;
+	margin-bottom: 32px;
 	p{
 		font-size: 28px;
 		font-weight: 700;
 		line-height: 36px;
 		color:#fff;
-		margin-bottom: 32px;
+	}
+}
+@media (max-width:575px) {
+	.popup_callback_title{
+		margin-bottom: 16px;
+		p{
+			font-size: 24px;
+			line-height: 1.2;
+		}
 	}
 }
 .popup_callback_text {
+	margin-bottom: 32px;
 	p{
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 24px;
 		color:#fff;
-		margin-bottom: 32px;
+	}
+}
+@media (max-width:575px) {
+	.popup_callback_text{
+		margin-bottom: 16px;
+		p{
+			font-size: 12px;
+			height: 1.2em;
+		}
 	}
 }
 .popup_form {
@@ -1574,6 +1626,11 @@ h4{
 		width: 100%;
 		height: 42px;
 		border-radius: 12px;
+}
+@media (max-width:575px) {
+	.popup_form_input{
+		height: 32px;
+	}
 }
 .popup_form_item {
 	margin-bottom: 16px;
