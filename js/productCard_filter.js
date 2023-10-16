@@ -1,26 +1,44 @@
 const filtrBtns = document.querySelectorAll('.filtrBtn');
-const cards = document.getElementsByClassName('singleCategory_row_card');
-const arr = [...cards]
+const cards = document.querySelectorAll('.singleCategory_row_card');
 
-function resetFilterPanel() {
-   filtrBtns.forEach(item => {
-      item.classList.remove('active');
+function allVisible() {
+   cards.forEach(item => {
+      item.classList.add('active')
    })
 }
 
-function filter() {
-   const newA = arr.filter(item => {
-      item.getAttribute('data-sort') === 'weel'
+allVisible()
+
+function allHide() {
+   cards.forEach(item => {
+      item.classList.remove('active')
    })
-   console.log(newA);
+}
+
+function resetFilterPanel() {
+   filtrBtns.forEach(item => {
+      item.classList.remove('active')
+   })
+}
+
+function addActive(typeTech) {
+   cards.forEach(item => {
+      if(item.getAttribute('data-sort') === typeTech){
+         item.classList.add('active')
+      }
+      if(typeTech ==='all'){
+         allVisible()
+      }
+   })
 }
 
 filtrBtns.forEach(item => {
    item.addEventListener('click', () => {
+      allHide()
       resetFilterPanel()
       item.classList.add('active')
-      console.log(item.getAttribute('data-sort'));
-   }) 
+      // console.log(item.getAttribute('data-sort'));
+      const typeTech = item.getAttribute('data-sort')
+      addActive(typeTech)
+   })
 })
-
-// console.log(cards[0].getAttribute('data-sort') === 'weel');
