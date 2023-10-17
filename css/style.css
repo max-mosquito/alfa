@@ -1032,6 +1032,9 @@ h4 {
 .map_pic_wrap.active {
   display: block;
 }
+.map_pic_wrap iframe {
+  width: 100%;
+}
 
 .comments {
   overflow: hidden;
