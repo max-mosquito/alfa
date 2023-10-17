@@ -17,6 +17,8 @@ closeTopMenu.addEventListener('click', () => {
 //catalog-----------------------------
 const catalogBtn = document.querySelectorAll('.catalogBtn');
 const dropdownPic = document.querySelectorAll('.dropdown_header_pic_item');
+const catalog = document.getElementById('catalog');
+const header = document.querySelector('.header');
 
 function hidePic() {
   dropdownPic.forEach(item => {
@@ -30,6 +32,22 @@ catalogBtn.forEach((item, i) => {
     dropdownPic[i].classList.add('active');
   })
 })
+
+catalog.addEventListener('mouseenter', () => {
+    document.body.classList.add('lock');
+    header.style.position = "relative";
+    header.style.zIndex = '2'
+  
+})
+
+catalog.addEventListener('mouseleave', () => {
+    document.body.classList.remove('lock');
+    header.style.position = "";
+    header.style.zIndex = ''
+  
+})
+
+
 
 //mask phone----------------
 maskPhone('.for_valid_tel')

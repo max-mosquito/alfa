@@ -1,5 +1,5 @@
 const filtrBtns = document.querySelectorAll('.filtrBtn');
-const cards = document.querySelectorAll('.singleCategory_row_card');
+const cards = document.querySelectorAll('.filter_item');
 
 function allVisible() {
    cards.forEach(item => {
@@ -37,7 +37,6 @@ filtrBtns.forEach(item => {
       allHide()
       resetFilterPanel()
       item.classList.add('active')
-      // console.log(item.getAttribute('data-sort'));
       const typeTech = item.getAttribute('data-sort')
       addActive(typeTech)
    })

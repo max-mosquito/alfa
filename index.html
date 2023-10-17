@@ -134,7 +134,7 @@
          <div class="choose_info">
             <div class="choose_info_card">
                <div class="choose_info_card_title">
-                  <h3>Более 100 единиц в наличии</h3>
+                  <h3>Более 100 единиц в&nbsp;наличии</h3>
                </div>
                <div class="choose_info_card_text">
                   <p>Предлагаем технику из наличия или закажем специально под вас</p>
@@ -177,18 +177,18 @@
          <div class="map_header">
             <div class="map_selects">
                <div class="map_select">
-                  <select name="geo" id="geo" class="map_select_item">
-                     <option value="Н. Новгород">Н. Новгород</option>
-                     <option value="Уфа">Уфа</option>
-                     <option value="Казань">Казань</option>
-                     <option value="Н. Челны">Н. Челны</option>
-                     <option value="Ижевск">Ижевск</option>
+                  <select name="city" id="city" class="map_select_item">
+                     <option value="0">Н. Новгород</option>
+                     <option value="1">Уфа</option>
+                     <option value="2">Казань</option>
+                     <option value="3">Н. Челны</option>
+                     <option value="4">Ижевск</option>
                   </select>
                </div>
                <div class="map_select">
-                  <select name="geo" id="geo" class="map_select_item">
-                     <option value="Продажи">Продажи</option>
-                     <option value="Сервисное обслуживание">Сервисное обслуживание</option>
+                  <select name="type" id="type" class="map_select_item">
+                     <option value="0">Продажи</option>
+                     <option value="1">Сервисное обслуживание</option>
                   </select>
                </div>
             </div>
@@ -212,9 +212,46 @@
             </div>
          </div>
          <div class="map_pic">
-            <img loading="lazy" src="img/map.png" alt=" ">
-            <!-- <div class="map_pic_wrap active"></div>
-            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казань</a><a href="https://yandex.ru/maps/43/kazan/?ll=49.107308%2C55.794289&utm_medium=mapframe&utm_source=maps&z=15.2" style="color:#eee;font-size:12px;position:absolute;top:14px;">Казань — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.107308%2C55.794289&z=15.2" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+            <div class="map_pic_city active">
+               <div class="map_pic_wrap active">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/20037/bor/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Бор</a><a href="https://yandex.ru/maps/20037/bor/?ll=44.071144%2C56.311249&utm_medium=mapframe&utm_source=maps&z=12.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Нижегородская область — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=44.071144%2C56.311249&z=12.17" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Нижний Новгород</a><a href="https://yandex.ru/maps/47/nizhny-novgorod/?ll=43.850378%2C56.311419&utm_medium=mapframe&utm_source=maps&z=12.17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Нижегородская область — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=43.850378%2C56.311419&z=12.17" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+            </div>
+            <div class="map_pic_city">
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/172/ufa/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Уфа</a><a href="https://yandex.ru/maps/172/ufa/?ll=56.185450%2C54.721773&utm_medium=mapframe&utm_source=maps&z=11.75" style="color:#eee;font-size:12px;position:absolute;top:14px;">Уфа — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=56.185450%2C54.721773&z=11.75" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/172/ufa/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Уфа</a><a href="https://yandex.ru/maps/172/ufa/?ll=55.840451%2C54.721773&utm_medium=mapframe&utm_source=maps&z=11.75" style="color:#eee;font-size:12px;position:absolute;top:14px;">Уфа — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=55.840451%2C54.721773&z=11.75" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+            </div>
+            <div class="map_pic_city">
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казань</a><a href="https://yandex.ru/maps/43/kazan/?ll=49.334702%2C55.783042&utm_medium=mapframe&utm_source=maps&z=11.4" style="color:#eee;font-size:12px;position:absolute;top:14px;">Казань — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=49.334702%2C55.783042&z=11.4" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/43/kazan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казань</a><a href="https://yandex.ru/maps/43/kazan/?ll=48.894981%2C55.783335&utm_medium=mapframe&utm_source=maps&z=11.4" style="color:#eee;font-size:12px;position:absolute;top:14px;">Казань — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.894981%2C55.783335&z=11.4" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+            </div>
+            <div class="map_pic_city">
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?ll=52.633329%2C55.727683&utm_medium=mapframe&utm_source=maps&z=11.62" style="color:#eee;font-size:12px;position:absolute;top:14px;">Республика Татарстан — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=52.633329%2C55.727683&z=11.62" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?ll=52.231811%2C55.727935&utm_medium=mapframe&utm_source=maps&z=11.62" style="color:#eee;font-size:12px;position:absolute;top:14px;">Республика Татарстан — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=52.231811%2C55.727935&z=11.62" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+            </div>
+            <div class="map_pic_city">
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижевск</a><a href="https://yandex.ru/maps/44/izhevsk/?ll=53.372163%2C56.832867&utm_medium=mapframe&utm_source=maps&z=11.74" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ижевск — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=53.372163%2C56.832867&z=11.74" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+               <div class="map_pic_wrap">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижевск</a><a href="https://yandex.ru/maps/44/izhevsk/?ll=53.097122%2C56.838050&utm_medium=mapframe&utm_source=maps&z=11.74" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ижевск — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=53.097122%2C56.838050&z=11.74" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+               </div>
+            </div>
          </div>
       </div>
    </section>
@@ -660,6 +697,7 @@
    <script src="js/maskPhone.js"></script>
    <script src="js/main_form.js"></script>
    <script src="js/popup_callback.js"></script>
+   <script src="js/main_map.js"></script>
    <script src="js/script.js"></script>
 </body>
 </html>

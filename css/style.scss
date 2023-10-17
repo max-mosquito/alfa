@@ -31,8 +31,17 @@ body {
 	color:$bt;
 	transition: 0.3s;
 	&.lock{
-		background-color: rgba(0, 0, 0, 0.75);
 		overflow: hidden;
+		&:before{
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.75);
+			z-index: 1;
+		}
 	}
 }
 h2{
@@ -150,6 +159,7 @@ h4{
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	background-color: #fff;
 }
 @media (max-width:991px) {
 	.header_top{
@@ -180,6 +190,7 @@ h4{
 	grid-template-columns: repeat(2, auto);
 	column-gap: 24px;
 	justify-content: space-between;
+	padding-bottom: 20px;
 }
 @media (max-width:767px) {
 	.dropdown_header_wrap{
@@ -500,6 +511,8 @@ h4{
 }
 .dropdown_catalog{
 	left: 0;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
 }
 @media (max-width:991px) {
 	.dropdown_catalog{
@@ -880,8 +893,11 @@ h4{
 	}
 }
 .map_pic {
-	img{
-		width: 100%;
+}
+.map_pic_wrap{
+	display: none;
+	&.active{
+		display: block;
 	}
 }
 // ----end map----
@@ -1861,7 +1877,9 @@ h4{
 	border: 1px solid #ACAFBF;
 	border-radius: 12px;
 	padding: 0 16px 16px;
-	display: none;
+}
+.filter_item{
+		display: none;
 	&.active{
 		display: block;
 	}
