@@ -879,9 +879,63 @@ h4 {
     width: 100%;
   }
 }
+.primary_list {
+  position: relative;
+}
+
+.primary_list_item {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1D1E26;
+}
+.primary_list_item span {
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background: url("../img/chevron_down.svg") center/contain no-repeat;
+  margin-left: 16px;
+}
+
+.secondary_list {
+  position: absolute;
+  left: -16px;
+  top: 100%;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(102, 122, 146, 0.2509803922);
+          box-shadow: 0px 4px 16px 0px rgba(102, 122, 146, 0.2509803922);
+  margin-top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.secondary_list.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.secondary_list_item {
+  margin-bottom: 32px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1D1E26;
+}
+.secondary_list_item:last-child {
+  margin-bottom: 0;
+}
+
 .map_select_item {
   width: 100%;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .map_descr {
@@ -1026,14 +1080,24 @@ h4 {
     display: inline;
   }
 }
-.map_pic_wrap {
-  display: none;
-}
-.map_pic_wrap.active {
-  display: block;
-}
-.map_pic_wrap iframe {
+.map_pic {
   width: 100%;
+  height: 352px;
+}
+
+@media (max-width: 575px) {
+  .map_pic {
+    height: 170px;
+  }
+}
+.map_pic_city {
+  width: 100%;
+  height: 100%;
+}
+
+[class*=ground-pane] {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .comments {
