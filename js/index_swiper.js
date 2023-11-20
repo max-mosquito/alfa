@@ -39,8 +39,8 @@ const swiper_main = new Swiper('.slider_main', {
 
  //swiper_partners--------------
  const slider_partners = new Swiper('.slider_partners', {
-  spaceBetween: 32,
-  slidesPerView: 3.5,
+  // spaceBetween: 32,
+  // slidesPerView: 3.5,
 
   pagination: {
     el: '.partners_swiper_pagination',
@@ -59,7 +59,7 @@ const swiper_main = new Swiper('.slider_main', {
     },
     575: {
       slidesPerView: 2,
-      spaceBetween: 40
+      // spaceBetween: 40
     },
     991: {
       slidesPerView: 3,
@@ -69,5 +69,5 @@ const swiper_main = new Swiper('.slider_main', {
     //   slidesPerView: 3.5,
     //   spaceBetween: 40
     // },
-  }
+  },
 });
