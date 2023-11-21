@@ -2991,8 +2991,7 @@ h4 {
 }
 @media (max-width: 767px) {
   .service .service_typeWork {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
+    display: block;
   }
 }
 .service .service_typeWork_header {
@@ -3020,9 +3019,38 @@ h4 {
 }
 .service .service_typeWork_pic {
   border-radius: 12px;
-}
-.service .service_typeWork_pic img {
+  max-width: 320px;
   width: 100%;
+}
+.service .service_slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.service .service_slide img {
+  width: 100%;
+}
+.service .service_pagination {
+  position: absolute;
+  left: 0;
+  bottom: 21px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.service .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  width: 74px;
+  height: 4px;
+  border-radius: 10px;
+}
+.service .swiper-pagination-bullet-active {
+  background-color: #FF671F;
 }
 .service .service_typeWork_content {
   display: -ms-grid;

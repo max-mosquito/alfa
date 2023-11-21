@@ -2656,7 +2656,7 @@ h4{
 	}
 	@media (max-width:767px) {
 		.service_typeWork{
-			grid-template-columns: repeat(1, 1fr);
+			display: block;
 		}
 	}
 	.service_typeWork_header{
@@ -2675,8 +2675,36 @@ h4{
 	}
 	.service_typeWork_pic {
 		border-radius: 12px;
+		max-width: 320px;
+		width: 100%;
+	}
+	.service_slider{
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+	.service_slide{
 		img{
 			width: 100%;
+		}
+	}
+	.service_pagination{
+		position: absolute;
+		left: 0;
+		bottom: 21px;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+	}
+	.swiper-pagination-bullet{
+		background-color: #fff;
+		opacity: 1;
+		width: 74px;
+		height: 4px;
+		border-radius: 10px;
+
+		&-active{
+			background-color: $bo;
 		}
 	}
 	.service_typeWork_content {
